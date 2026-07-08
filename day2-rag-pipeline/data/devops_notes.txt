@@ -1,0 +1,9 @@
+Christian is building an LLMOps and AI DevOps portfolio project.
+
+Day 1 focused on secure LLM API integration using Python and FastAPI. The project included a health endpoint, an ask endpoint, environment variable management, structured JSON responses, error handling, logging, and latency tracking.
+
+The Day 1 project was committed and pushed to GitHub in the repository named LLMOps-AI-DevOps.
+
+Day 2 focuses on Retrieval-Augmented Generation, also called RAG. RAG allows an AI application to answer questions using private documents. A RAG pipeline usually includes document loading, chunking, embeddings, vector database storage, retrieval, and answer generation.
+
+Christian's DevOps background is useful for LLMOps because production AI applications still need secrets management, CI/CD, monitoring, rollback, logging, cost control, and incident response.
