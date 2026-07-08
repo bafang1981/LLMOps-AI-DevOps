@@ -1,0 +1,17 @@
+[
+  {
+    "question": "What is Kubernetes?",
+    "answer": "Kubernetes is a container orchestration platform used to deploy, scale, and manage containerized applications in a cluster.",
+    "expected_keywords": ["container", "orchestration", "cluster"]
+  },
+  {
+    "question": "Why is monitoring important in production?",
+    "answer": "Monitoring is important in production because it helps teams detect failures, track latency, observe errors, and respond before users are impacted.",
+    "expected_keywords": ["detect", "latency", "errors"]
+  },
+  {
+    "question": "Why should secrets not be hardcoded?",
+    "answer": "Secrets should not be hardcoded because they can be leaked in source control. They should be stored in secure systems like Secrets Manager, Parameter Store, or CI/CD secrets.",
+    "expected_keywords": ["source control", "Secrets Manager", "CI/CD"]
+  }
+]

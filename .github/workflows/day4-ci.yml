@@ -1,0 +1,38 @@
+name: Day 4 LLMOps CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test-and-evaluate:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: day4-cicd-llmops
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run API tests
+        run: pytest
+
+      - name: Run LLM evaluation gate
+        run: python evals/eval_runner.py
+
+      - name: Build Docker image
+        run: docker build -t day4-llmops-cicd .
