@@ -16,9 +16,6 @@ jobs:
       run:
         working-directory: day4-cicd-llmops
 
-    env:
-      PYTHONPATH: .
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -34,7 +31,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run API tests
-        run: python -m pytest
+        run: PYTHONPATH=$PWD python -m pytest
 
       - name: Run LLM evaluation gate
         run: python evals/eval_runner.py
