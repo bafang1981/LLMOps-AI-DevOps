@@ -1,0 +1,6 @@
+MODEL_NAME = "gpt-4.1-mini"
+PROMPT_VERSION = "v1"
+
+# Demo cost values for training only.
+COST_PER_1000_PROMPT_TOKENS = 0.00015
+COST_PER_1000_COMPLETION_TOKENS = 0.00060
