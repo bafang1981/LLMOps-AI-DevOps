@@ -1,0 +1,9 @@
+LLMOps is the practice of applying DevOps principles to large language model applications.
+
+Production LLM applications require secure secret management, CI/CD pipelines, evaluation gates, observability, cost tracking, prompt versioning, rollback strategy, and incident response.
+
+RAG, or Retrieval-Augmented Generation, allows an AI application to answer questions using private documents. A RAG system usually includes document loading, chunking, embeddings, vector database storage, retrieval, and answer generation.
+
+AI agents can use approved tools to interact with systems such as CloudWatch, Kubernetes, Jira, ServiceNow, GitHub, Splunk, Datadog, and internal APIs.
+
+Observability for LLM applications includes request IDs, latency, token usage, estimated cost, model name, prompt version, error rate, and quality signals.
